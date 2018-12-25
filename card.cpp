@@ -1,7 +1,7 @@
 /*该程序是card类的成员函数的具体实现，包括：
 构造函数（默认+手动创建）、析构函数、
 刷卡（对三种卡分别处理，包括了处理信息，扣钱，以及对余额过低、不足的处理）、
-销毁、重新创建（同主函数中的代码块）、导出使用时间、有效期更新。*/
+销毁、重新创建（同主函数中的代码块）、导出使用时间、有效期更新（主函数中没有体现，不过只需调用就可以体现了）。*/
 #include <iostream>
 #include <string>
 #include "card.h"
@@ -32,7 +32,7 @@ Card::Card(CARDTYPE type,const std::string & name, const std::string &number, in
     //     else if(Card_type==teacher&&TcardAmount<ScardAmount-1)
     //         TcardAmount++;
     //     else if(Card_type==limit&&LcardAmount<TcardAmount-1)
-    //         LcardAmount++;//此处未处理数量溢出的退出
+    //         LcardAmount++;
 }
 
 Card::~Card()
