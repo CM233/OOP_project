@@ -70,7 +70,7 @@ int Car::amountlimit()//最大人数检测
     return 0;
 }                              
 
-double Car::exact_rate()//准时率计算
+double Car::exact_rate()//人满率计算
 {
    return (double)amt/Amount;
 }
