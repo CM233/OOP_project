@@ -144,7 +144,7 @@ void Card::recreate()//办新卡（包含了临时卡创建）
             cout<<"成功办理"<<endl;
 }
 
-// int Card::usedtimes_out()//导出使用时间
+// int Card::usedtimes_out()//导出使用时间，前期测试用函数，不能提现封装特性，已弃用
 // {
 //     return Used_times;
 // }
@@ -154,7 +154,7 @@ void Card::timepass()//有效期更新
     Valid_time--;
 }
 
-void Card::refresh()
+void Card::refresh()//用于区分子类父类，并未出现子类父类混淆情况，半弃用
 {
     cout<<"不是临时卡，不需要重新激活"<<endl;
 }
