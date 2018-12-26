@@ -174,7 +174,7 @@ int main()
             if(i<m-1)
             {   
                 int l;
-                cout<<"i号后的用户将会向前覆盖"<<endl; 
+                cout<<i<<"号后的用户将会向前覆盖"<<endl; 
                 for(l=i;l<m;l++)    
                 {
                     c[l]=c[l-1];//向前覆盖
